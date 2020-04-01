@@ -42,7 +42,8 @@ class ListComponent extends Component{
            }
            {
                this.props.loading && <div>
-                  <div class="loader">Loading</div>
+                   <p>Fetching Results...!!!</p>
+                  <div class="loader"></div>
                </div>
            }
            {

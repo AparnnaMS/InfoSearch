@@ -1,0 +1,141 @@
+.wrapper{
+        width: 50%;
+        margin: 30px auto;
+        padding: 20px;
+       
+}
+input[type=text] {
+    box-sizing: border-box;
+    border: 1px solid #E9E9E9;
+    font-size: 14px;
+    color: #8C8889;
+    line-height: 38px;
+    height: 45px;
+    width: 90%;
+  }
+  input[type=text]:focus {
+    /* width: 70%; */
+    box-sizing: border-box;
+    border: 1px solid #E9E9E9;
+    font-size: 14px;
+    color: #8C8889;
+    line-height: 38px;
+    height: 40px;
+  }
+  .serch-btn{
+    float: right;
+    display: block;
+    border-radius: 4px;
+    font-size: 17px;
+    line-height: 40px;
+    height: 45px;
+    text-align: center;
+    background: #FE4066;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    color: #ffffff;
+    border: none;
+  }
+  table { 
+	width: 750px; 
+	border-collapse: collapse; 
+	margin:50px auto;
+	}
+
+tr:nth-of-type(even) { 
+	background: rgb(248, 150, 170); 
+	}
+
+th { 
+	background: #3498db; 
+	color: white; 
+	font-weight: bold; 
+    }
+thead >tr>td{
+    background: rgb(248, 150, 170); 
+}
+
+td, th { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+	font-size: 18px;
+    }
+    tr{
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    .loader {
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #3498db;
+        width: 50px;
+        height: 50px;
+        margin: 30px auto;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+      }
+      
+      /* Safari */
+      @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	table { 
+	  	width: 100%; 
+	}
+
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; overflow-wrap: break-word;
+        word-wrap: break-word;}
+	
+	td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+	td:before { 
+	
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		content: attr(data-column);       
+		color: #000;
+		font-weight: bold;
+    }
+    .serch-btn{
+        display: block;
+        width:90%;
+        float:none;
+        margin:10px 0px;
+    }
+
+}
